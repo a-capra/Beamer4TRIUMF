@@ -1,0 +1,86 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+\usepackage{textpos}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{bm}
+
+\usepackage{appendixnumberbeamer}
+\renewcommand\appendixname{Appendix}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\DeclarePairedDelimiter\bra{\langle}{\rvert}
+\DeclarePairedDelimiter\ket{\lvert}{\rangle}
+
+\newcommand{\h}{\overline{\text{H}}}
+\newcommand{\anti}[1]{\overline{\text{#1}}}
+\newcommand{\pos}{\text{e}^{+}}
+\newcommand{\pic}{\pi^{\pm}}
+\newcommand{\pio}{\pi^0}
+
+\usepackage{xcolor}
+
+\graphicspath{{./figures/}}
+
+\mode<presentation> {
+\usetheme{Madrid}
+\usecolortheme{whale}
+\definecolor{TRIUMFblue}{RGB}{0,159,223}
+\definecolor{TRIUMFblack}{RGB}{17,17,17}
+\setbeamercolor{structure}{fg=TRIUMFblue}
+\setbeamertemplate{navigation symbols}{} 
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.75\textwidth,-0.7cm)
+\includegraphics[height=0.5cm,keepaspectratio=true]{ALPHA_Logo.png}\hspace{10pt}\includegraphics[height=0.5cm,keepaspectratio=true]{TRIUMF_Logo_White.png}
+\end{textblock*}}
+}
+
+\setbeamercolor{block title}{bg=TRIUMFblue,fg=white}
+
+
+\title[Beamer4TRIUMF]{Not-a-Template Beamer4TRIUMF} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author[Andrea]{Andrea}
+\institute[TRIUMF]{\includegraphics[height=0.75cm,keepaspectratio=true]{./TRIUMF_Logo_Blue.png}}
+
+\date[9/9/1999]{Conference 1999, Vancouver}
+
+\pdfinfo
+{
+   /Author (Andrea Capra)
+   /Title (Not-a-Template Beamer4TRIUMF)
+   /Subject (Latex Beamer Template)
+   /Creator  (Andrea Capra)
+   /CreationDate (D:201801230000)
+}
+
+\begin{document}
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}{Image slide}
+  \begin{center}
+  \includegraphics[scale=0.25]{./quarks}
+   \end{center}
+   
+\end{frame}
+
+\begin{frame}{Bullet-points slide}
+  \begin{itemize}
+  \item first
+  \item second
+  \item $\ldots$
+ \end{itemize}
+
+\end{frame}
+
+\end{document}
